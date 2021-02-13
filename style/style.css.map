@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,eAAe,EAAE,UAAU;EAC3B,kBAAkB,EAAE,UAAU;EAC9B,UAAU,EAAE,UAAU;CACzB",
+    "sources": [
+        "style.scss",
+        "_baserules.scss",
+        "_variables.scss",
+        "_header.scss",
+        "_mediaquery_header.scss",
+        "_title.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
