@@ -1,0 +1,120 @@
+.header {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    padding: 1.375rem 6.25rem;
+
+    img {
+        float: left;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .nav {
+        float: right;
+    }
+}
+
+.header {
+    .nav {
+        .menu {
+            ul {
+                width: 100%;
+                position: absolute;
+                top: 1.625rem;
+                right: 0;
+                overflow: hidden;
+                list-style: none;
+                background: $color-menu-h;
+                height: 0px;
+                transition: height 0.5s ease;
+            }
+        }
+    }
+}
+
+.header {
+    .nav {
+        .menu {
+            ul {
+                li {
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        color: $text-color-2;
+                        font-family: 'IBM Plex Mono', monospace;
+                        padding: 1rem 5%;
+                        line-height: 28px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.header {
+    .nav {
+        .menu {
+            input {
+                display: block;
+                width: 40px;
+                height: 32px;
+                opacity: 0;
+                z-index: 2;
+                position: absolute;
+                /*animación del menu que se desplega*/
+                &[type="checkbox"]:checked ~ ul {
+                    height: 14rem;
+                    transition: height 0.5s ease-in-out;
+                    -moz-transition: height 0.5s ease-in-out;
+                    -o-transition: height 0.5s ease-in-out;
+                    -webkit-transition: height 0.5s ease-in-out;
+                }
+                /*movimiento a cruz*/
+                &:checked ~ span {
+                    opacity: 1;
+                    transform: rotate(45deg) translate(2px, 1px);
+                }
+                &:checked ~ span:nth-last-child(3) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+                &:checked ~ span:nth-last-child(2) {
+                    transform: rotate(-45deg) translate(1px, 0px);
+                }
+
+            }
+        padding-top: 0.1875rem;
+        }
+    }
+}
+
+
+/*span -lineas del menu hamburguesa-*/
+.header {
+    .nav {
+        .menu {
+            span {
+                display: block;
+                width: 1.5625rem;
+                height: 0.1563rem;
+                margin-bottom: 0.4063rem;
+                position: relative;
+                background: $text-color-1;
+                z-index: 1;
+                transform-origin: 0.1875rem 0rem;
+                transition: transform 0.5s ease,
+                opacity 0.55s ease;
+                &:first-child {
+                    transform-origin: 0% 0%;
+                }
+                &:nth-last-child(2) {
+                    transform-origin: 0% 100%;
+                }
+            }
+        }
+    }
+}
