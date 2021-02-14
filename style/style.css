@@ -157,11 +157,13 @@
           flex-direction: column;
   background: #FFFFFF;
   color: #060A24;
+  margin-top: 5rem;
 }
 
 .title h1 {
-  font-size: 4rem;
+  font-size: 2.75rem;
   font-family: 'IBM Plex Sans', sans-serif;
+  margin-left: 6.25rem;
 }
 
 .title h1 .color {
@@ -175,19 +177,40 @@
 .title p {
   font-size: 1rem;
   font-family: 'IBM Plex Mono', monospace;
+  margin-left: 6.25rem;
 }
 
 .title .btn {
   height: 3.5rem;
   width: 14.125rem;
   background: #00F3BB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 6.25rem;
+  margin-top: 56px;
+  margin-bottom: 5px;
 }
 
 .title .btn:hover {
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  line-height: 24px;
+}
+
+.title .btn:hover a {
+  color: #FFFFFF;
 }
 
 .title .btn a {
+  color: #060A24;
   text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

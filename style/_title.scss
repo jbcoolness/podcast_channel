@@ -3,9 +3,11 @@
     flex-direction: column;
     background: $text-color-2;
     color: $text-color-1;
+    margin-top: 5rem;
     h1 {
-        font-size: 4rem;        
+        font-size: 2.75rem;
         font-family: 'IBM Plex Sans', sans-serif;
+        margin-left: 6.25rem;
         .color {
             color: $color-menu-h
         }
@@ -16,17 +18,32 @@
     p {
         font-size: 1rem;
         font-family: 'IBM Plex Mono', monospace;
+        margin-left: 6.25rem;
     }
 
     .btn {
         height: 3.5rem;
         width: 14.125rem;
         background: $btn-color-normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6.25rem;
+        margin-top: 56px;
+        margin-bottom: 5px;
         &:hover {
             background: $btn-color-hover;
+            line-height: 24px;
+            a {
+                color: $text-color-2;
+            }
         }
+
         a {
+            color: $text-color-1;
             text-decoration: none;
+            font-family: 'IBM Plex Mono', monospace;
+            text-align: center;
             
         }
     }
