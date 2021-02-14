@@ -114,4 +114,34 @@
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
 }
+
+@media screen and (min-width: 764px) {
+  .header .nav .menu ul {
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: unset;
+    height: unset;
+  }
+  .header .nav .menu ul li {
+    padding: 0.3125rem 0.625rem;
+    display: inline-block;
+  }
+  .header .nav .menu ul li a {
+    color: #060A24;
+    padding: unset;
+    line-height: unset;
+  }
+  .header .nav .menu ul li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  .header .nav .menu span {
+    display: none;
+  }
+  .header .nav .menu input {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

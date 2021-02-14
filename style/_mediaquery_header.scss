@@ -1,0 +1,56 @@
+@media screen and (min-width: 764px) {
+    .header {
+        .nav {
+            .menu {
+                ul {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    overflow: hidden;
+                    background: unset;
+                    height: unset;
+                }
+            }
+        }
+    }
+
+
+    .header {
+        .nav {
+            .menu {
+                ul {
+                    li {
+                        padding: 0.3125rem 0.625rem;
+                        display: inline-block;
+                        
+                        a {
+                            color: $text-color-1;
+                            padding: unset;
+                            line-height: unset;
+                            &:hover {
+                                color: $btn-color-normal;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        .nav {
+            .menu {
+                span {
+                    display: none;
+                    }
+                input {
+                    display: none;
+                }
+                
+            }
+        }
+    }
+
+
+}
