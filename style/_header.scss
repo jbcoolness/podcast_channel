@@ -1,7 +1,8 @@
 .header {
     width: 100%;
-    height: 5rem;
-    position: fixed;
+    height: 80px;
+    background: $text-color-2;
+    position: sticky;
     top: 0;
     padding: 1.375rem 6.25rem;
 

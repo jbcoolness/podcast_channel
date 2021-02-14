@@ -1,0 +1,36 @@
+.title {    
+    display: flex;
+    flex-direction: column;
+    background: $text-color-2;
+    color: $text-color-1;
+    h1 {
+        font-size: 4rem;        
+        font-family: 'IBM Plex Sans', sans-serif;
+        .color {
+            color: $color-menu-h
+        }
+        .line {
+            text-decoration: line-through;
+        }
+    }
+    p {
+        font-size: 1rem;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .btn {
+        height: 3.5rem;
+        width: 14.125rem;
+        background: $btn-color-normal;
+        &:hover {
+            background: $btn-color-hover;
+        }
+        a {
+            text-decoration: none;
+            
+        }
+    }
+    
+    
+
+}

@@ -9,8 +9,10 @@
 
 .header {
   width: 100%;
-  height: 5rem;
-  position: fixed;
+  height: 80px;
+  background: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   padding: 1.375rem 6.25rem;
 }
@@ -143,5 +145,49 @@
   .header .nav .menu input {
     display: none;
   }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  color: #060A24;
+}
+
+.title h1 {
+  font-size: 4rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.title h1 .color {
+  color: #0000EC;
+}
+
+.title h1 .line {
+  text-decoration: line-through;
+}
+
+.title p {
+  font-size: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.title .btn {
+  height: 3.5rem;
+  width: 14.125rem;
+  background: #00F3BB;
+}
+
+.title .btn:hover {
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+.title .btn a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
