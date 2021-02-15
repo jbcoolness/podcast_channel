@@ -1,0 +1,29 @@
+.main {
+    h3 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 40px;
+        color: $text-color-1;
+        margin-top: 6.25rem;
+        margin-bottom: 1rem;
+        margin-left: 6.25rem;
+    }
+    .section-1 {        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;        
+        justify-items: center;
+        //padding-top: 150px;
+        
+
+        .episode {            
+            overflow: hidden;
+            height: 210px;
+            width: 400px;
+            iframe {
+                
+                overflow: hidden;
+            }
+        }
+    }   
+    
+}

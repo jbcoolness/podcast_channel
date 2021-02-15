@@ -213,4 +213,33 @@
   font-family: 'IBM Plex Mono', monospace;
   text-align: center;
 }
+
+.main h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 40px;
+  color: #060A24;
+  margin-top: 6.25rem;
+  margin-bottom: 1rem;
+  margin-left: 6.25rem;
+}
+
+.main .section-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.main .section-1 .episode {
+  overflow: hidden;
+  height: 210px;
+  width: 400px;
+}
+
+.main .section-1 .episode iframe {
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */
