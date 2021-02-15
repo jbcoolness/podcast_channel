@@ -214,9 +214,9 @@
   text-align: center;
 }
 
-.main h3 {
+.main .h3-section-1 {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #060A24;
   margin-top: 6.25rem;
   margin-bottom: 1rem;
@@ -235,11 +235,44 @@
 
 .main .section-1 .episode {
   overflow: hidden;
-  height: 210px;
-  width: 400px;
+  height: 13.125rem;
+  width: 25rem;
 }
 
 .main .section-1 .episode iframe {
   overflow: hidden;
+}
+
+.main .section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .section-2 img {
+  height: 600px;
+  width: auto;
+}
+
+.main .section-2 .text {
+  height: 200px;
+  width: 460px;
+}
+
+.main .section-2 .text .h3-section-2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main .section-2 .text p {
+  line-height: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
