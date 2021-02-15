@@ -50,10 +50,26 @@
                 font-family: 'IBM Plex Mono', monospace;
                 margin-bottom: 1rem;
             }
+        }        
+    }
 
+    .section-3 {
+        h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin-left: 6.25rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
         }
-
-        
+        .galery-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;            
+            
+            img {
+                width: 100%;
+                height: auto;
+            }            
+        }
     }
     
 }
