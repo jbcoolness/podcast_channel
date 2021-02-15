@@ -211,6 +211,7 @@
   color: #060A24;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -295,5 +296,51 @@
 .main .section-3 .galery-images img {
   width: 100%;
   height: auto;
+}
+
+.main .section-4 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.125rem;
+}
+
+.main .section-4 h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin-left: 6.25rem;
+  margin-bottom: 3rem;
+  font-size: 28px;
+}
+
+.main .section-4 .images-section-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main .section-4 .images-section-4 .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .section-4 .images-section-4 .img img {
+  height: 80px;
+  width: 80px;
+}
+
+.main .section-4 .images-section-4 .img p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
