@@ -290,8 +290,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     justify-items: start;
-    padding-bottom: 150px;
-    padding-top: 70px;
+    padding: 70px 50px 150px 50px;
   }
   .main .section-1 .h3-section-1 {
     -ms-grid-column: 1;
