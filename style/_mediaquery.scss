@@ -1,14 +1,73 @@
+@media screen and (min-width: 321px) {
+    .title {
+        background: red;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    // Estilos para el header
+    .header {
+        .nav {
+            .menu {
+                ul {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    overflow: hidden;
+                    background: unset;
+                    height: unset;
+                }
+            }
+        }
+    }
+
+
+    .header {
+        .nav {
+            .menu {
+                ul {
+                    li {
+                        padding: 0.3125rem 0.625rem;
+                        display: inline-block;
+                        
+                        a {
+                            color: $text-color-1;
+                            padding: unset;
+                            line-height: unset;
+                            &:hover {
+                                color: $btn-color-normal;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        .nav {
+            .menu {
+                span {
+                    display: none;
+                    }
+                input {
+                    display: none;
+                }
+                
+            }
+        }
+    }
+
+    
+    // Estilos para el main
     .main {
-        .section-1 {
-        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        clip-path: polygon(0 12%, 100% 0, 100% 85%, 0 100%);     
+        .section-1 {        
         display: grid;
         grid-gap: 40px 50px;
         grid-template-columns: auto auto;
         grid-template-rows: 100px 232px 232px;
-        justify-content: center;
-        justify-items: start;
+        
         //padding-bottom: 150px;
         //padding-top: 70px;
         padding: 70px 50px 150px 50px;
@@ -26,8 +85,8 @@
         
             iframe {            
                 overflow: hidden;
-                height: 232px;
-                width: 400px;
+                height: 14.5rem;
+                width: 25rem;
             }
         }
 
@@ -87,7 +146,7 @@
                 font-family: 'IBM Plex Sans', sans-serif;
                 margin-left: 6.25rem;
                 margin-bottom: 3rem;
-                font-size: 28px;
+                font-size: 1.75rem;
             }
             .images-section-4 {
                 display: flex;
@@ -158,4 +217,5 @@
         }
     }
 }
+
 

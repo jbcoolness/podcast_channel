@@ -1,24 +1,24 @@
 .footer {    
     width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-        margin-left: 36px;
+    height: 5.625rem;
+    padding: 1rem 0;  
+    
+    h3 {        
+        text-align: center;  
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 12px;
+        font-size: 0.9375rem;
+        margin-bottom: 0.8rem;
     }
 
     .icons {
+        display: flex;
+        justify-content: space-evenly;
+        
         a {
-            margin-right: 30px;
+            
             text-decoration: none;
             font-weight: bold;
-            color: $text-color-1;
-            &:hover {
-            color: $color-menu-h;
-            }
+            color: $text-color-1;            
         }
     }
 }
