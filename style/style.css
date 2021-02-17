@@ -9,16 +9,17 @@
 
 .container {
   max-width: 1440px;
-  margin: auto;
 }
 
 .header {
   width: 100%;
   height: 65px;
   background: #FFFFFF;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  padding: 18px 40px;
+  padding: 1.125rem 1.25rem;
+  z-index: 10;
 }
 
 .header img {
@@ -49,8 +50,8 @@
   text-decoration: none;
   color: #FFFFFF;
   font-family: 'IBM Plex Mono', monospace;
-  padding: 1rem 5%;
-  line-height: 28px;
+  padding: 1.5rem 1rem 0 5%;
+  line-height: 1.75rem;
   display: block;
 }
 
@@ -62,16 +63,17 @@
   display: block;
   width: 40px;
   height: 32px;
-  opacity: 1;
+  opacity: 0;
   z-index: 2;
   position: absolute;
-  right: 20px;
+  right: 1rem;
   /*animación del menu que se desplega*/
   /*movimiento a cruz*/
 }
 
 .header .nav .menu input[type="checkbox"]:checked ~ ul {
-  height: 14rem;
+  height: 240px;
+  z-index: -1;
   transition: height 0.5s ease-in-out;
   -moz-transition: height 0.5s ease-in-out;
   -o-transition: height 0.5s ease-in-out;
@@ -102,7 +104,7 @@
   height: 0.1563rem;
   margin-bottom: 0.4063rem;
   position: relative;
-  right: 2px;
+  right: 1px;
   background: #060A24;
   z-index: 1;
   -webkit-transform-origin: 0.1875rem 0rem;
@@ -131,6 +133,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FFFFFF;
   color: #060A24;
   margin-top: 1rem;
@@ -140,7 +148,7 @@
 .title h1 {
   font-size: 2.75rem;
   font-family: 'IBM Plex Sans', sans-serif;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .title h1 .color {
@@ -151,15 +159,19 @@
   text-decoration: line-through;
 }
 
-.title p {
-  font-size: 1rem;
+.title .desktop {
+  display: none;
+}
+
+.title .mobile {
+  font-size: 0.875rem;
   font-family: 'IBM Plex Mono', monospace;
-  margin-left: 2rem;
+  margin: 2rem 1rem;
 }
 
 .title .btn {
-  height: 3.5rem;
-  width: 14.125rem;
+  height: 3rem;
+  width: 17.5rem;
   background: #00F3BB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,9 +182,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 6.25rem;
-  margin-top: 56px;
-  margin-bottom: 5px;
+  margin: 2rem 1rem;
 }
 
 .title .btn:hover {
@@ -194,23 +204,32 @@
 
 .main .section-1 {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-clip-path: polygon(0 12%, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 12%, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+          clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px 0px;
-  -ms-grid-columns: 20rem;
-      grid-template-columns: 20rem;
+  grid-gap: 0.625rem 0;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-items: start;
+  padding: 9rem 0;
+}
+
+.main .section-1 .h3-section-1 {
+  font-size: 2.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  text-align: start;
+  margin-bottom: 1.5rem;
 }
 
 .main .section-1 iframe {
   overflow: hidden;
-  height: 14.5rem;
-  width: 300px;
+  height: 225px;
+  width: 298px;
 }
 
 .main .section-2 {
@@ -236,6 +255,10 @@
           transform: translate(0, -5.625rem);
 }
 
+.main .section-2 .text {
+  padding: 0 1rem;
+}
+
 .main .section-2 .text .h3-section-2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 2.5rem;
@@ -243,15 +266,14 @@
 }
 
 .main .section-2 .text p {
-  line-height: 24px;
+  line-height: 1.5rem;
   font-family: 'IBM Plex Mono', monospace;
   margin-bottom: 1rem;
 }
 
 .main .section-3 h3 {
   font-family: 'IBM Plex Sans', sans-serif;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin: 2.5rem 1rem 1rem 1rem;
   font-size: 2rem;
 }
 
@@ -310,15 +332,15 @@
 }
 
 .main .section-4 .images-section-4 .img img {
-  height: 3.125rem;
-  width: 3.125rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .main .section-4 .images-section-4 .img p {
-  width: 6.25rem;
+  width: 10.625rem;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -352,8 +374,8 @@
 }
 
 .main .section-5 .btn {
-  height: 48px;
-  width: 300px;
+  height: 3rem;
+  width: 18rem;
   margin-top: 2rem;
   background: #00F3BB;
   display: -webkit-box;
