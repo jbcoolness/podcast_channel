@@ -1,0 +1,181 @@
+@media screen and (min-width: 321px) {
+    .main {
+        // Estilos para la section-1 episodios podcast      
+        .section-1 {            
+            grid-template-columns: auto;
+            grid-gap: 1rem 0;
+            iframe {
+                width: 90vw;
+            }
+        }
+                
+        // Estilos para section-3 invitadas estelares
+        .section-3 {
+            .galery-images {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        // Estilos para section-4 algunos de nuestros temas
+        .section-4 {
+            .images-section-4 {
+                display: grid;
+                grid-template-columns: auto auto;                
+                align-items: center;
+                grid-gap: 3rem 1rem;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 18px;
+    }
+    .main {
+        .section-1 {
+        clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
+        display: grid;
+        grid-gap: 1.25rem 1.875rem;
+        grid-template-columns: auto auto;
+        padding: 4.375rem 3.125rem 9.375rem 3.125rem;
+
+            .h3-section-1 {                
+                grid-column-start: 1;
+                grid-column-end: -1;
+                font-size: 2.5rem;
+                padding-top: 4.5rem;
+                margin-left: 2rem;
+            }
+        
+            iframe {                
+                width: 40vw;
+            }
+        }
+
+        .section-2 {            
+            display: flex;
+            flex-direction: row;
+            //justify-content: center;
+            align-items: flex-start;
+            //align-content: space-between;
+            
+            .text {
+                height: 12.5rem;
+                width: 29rem;                
+            }        
+        }
+        
+        .section-3 {
+            h3 {
+                grid-column-start: 1;
+                grid-column-end: -1;
+                margin-left: 6.25rem;
+                margin-bottom: 1rem;                
+            }
+            .galery-images {
+                grid-template-columns: auto auto auto;                
+            }        
+        }
+        
+        .section-4 {
+            margin-top: 2.5rem;
+            margin-bottom: 1.125rem;
+            h3 {
+                margin-left: 6.25rem;
+                margin-bottom: 3rem;
+            }
+            .images-section-4 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                    
+                .img {
+                    margin-left: 45px;
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        height: 6.25rem;
+                        width: 6.25rem;
+                        margin: 0 2rem;
+                    }
+                    p {
+                        font-size: 1.5rem;                        
+                    }
+                }                        
+            }
+        }
+        
+        .section-5 {
+            background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                //margin-top: 200px;
+                font-size: 38px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                color: $text-color-2;
+            }
+        
+            .btn {
+                height: 48px;
+                width: 300px;
+                margin-top: 2rem;
+                background: $btn-color-normal;
+                display: flex;
+                justify-content: center;
+                align-items: center;            
+                &:hover {
+                    background: $btn-color-hover;
+                    line-height: 24px;
+                    a {
+                        color: $text-color-2;                    
+                    }
+                }
+            
+                a {
+                    color: $text-color-1;
+                    text-decoration: none;
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: center;                
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .main {
+        .section-1 {
+        display: grid;
+        grid-gap: 40px 70px;
+        grid-template-columns: auto auto;
+        //grid-template-rows: 100px 40vh 40vh;
+        padding: 70px 50px 150px 50px;
+        justify-content: space-around;
+
+            .h3-section-1 {
+                grid-column-start: 1;
+                grid-column-end: -1;
+                font-size: 2.5rem;
+                padding-top: 4.5rem;
+                margin-left: 6.25rem;
+            }
+        
+            iframe {            
+                overflow: hidden;
+                height: 232px;
+                width: 550px;
+            }
+        }
+    }
+}

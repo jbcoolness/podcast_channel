@@ -18,10 +18,13 @@
             text-decoration: line-through;
         }
     }
-    .desktop {
+    .p-desktop {
         display: none;
+        font-size: 0.875rem;
+        font-family: 'IBM Plex Mono', monospace;
+        margin: 2rem 1rem;
     }
-    .mobile {
+    .p-mobile {
         font-size: 0.875rem;
         font-family: 'IBM Plex Mono', monospace;
         margin: 2rem 1rem;

@@ -1,0 +1,11 @@
+@media screen and (min-width: 1025px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        .icons {
+            a {
+                margin: 0 1.2rem;
+            }
+        }
+    }
+}
