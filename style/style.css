@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=IBM+Plex+Sans:wght@300&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +52,7 @@
   position: relative;
   text-decoration: none;
   color: #FFFFFF;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   padding: 1.5rem 1rem 0 5%;
   line-height: 1.75rem;
   display: block;
@@ -63,7 +65,7 @@
 .header .nav .menu input {
   display: block;
   width: 40px;
-  height: 32px;
+  height: 2rem;
   opacity: 0;
   z-index: 2;
   position: absolute;
@@ -73,7 +75,7 @@
 }
 
 .header .nav .menu input[type="checkbox"]:checked ~ ul {
-  height: 240px;
+  height: 15rem;
   z-index: -1;
   transition: height 0.5s ease-in-out;
   -moz-transition: height 0.5s ease-in-out;
@@ -184,7 +186,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FFFFFF;
   color: #060A24;
   margin-top: 1rem;
   width: 100%;
@@ -327,7 +328,7 @@
 
 .main .section-1 .h3-section-1 {
   font-size: 2.5rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: #FFFFFF;
   line-height: 0.5rem;
   text-align: start;
@@ -358,7 +359,7 @@
 
 .main .section-2 img {
   height: auto;
-  width: 320px;
+  width: 20rem;
   -webkit-transform: translate(0, -5.625rem);
           transform: translate(0, -5.625rem);
 }
@@ -368,19 +369,19 @@
 }
 
 .main .section-2 .text .h3-section-2 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .main .section-2 .text p {
   line-height: 1.5rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   margin-bottom: 1rem;
 }
 
 .main .section-3 h3 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   margin: 2.5rem 1rem 1rem 1rem;
   font-size: 2rem;
 }
@@ -404,9 +405,9 @@
 }
 
 .main .section-4 h3 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   margin: 3rem 1rem;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .main .section-4 .images-section-4 {
@@ -446,7 +447,7 @@
 
 .main .section-4 .images-section-4 .img p {
   width: 10.625rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
@@ -477,7 +478,7 @@
 .main .section-5 h3 {
   text-align: center;
   font-size: 2rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: #FFFFFF;
 }
 
@@ -497,11 +498,20 @@
           align-items: center;
 }
 
+.main .section-5 .btn:hover {
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  line-height: 1.5rem;
+}
+
+.main .section-5 .btn:hover a {
+  color: #FFFFFF;
+}
+
 .main .section-5 .btn a {
   color: #060A24;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 14px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
   font-weight: bold;
   text-align: center;
 }
@@ -535,8 +545,6 @@
   .main .section-1 {
     -webkit-clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
             clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
-    display: -ms-grid;
-    display: grid;
     grid-gap: 1.25rem 1.875rem;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
@@ -603,7 +611,7 @@
         align-content: center;
   }
   .main .section-4 .images-section-4 .img {
-    margin-left: 45px;
+    margin-left: 2.8125rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -620,71 +628,12 @@
   .main .section-4 .images-section-4 .img p {
     font-size: 1.5rem;
   }
-  .main .section-5 {
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-    height: 400px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .main .section-5 h3 {
-    font-size: 38px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: #FFFFFF;
-  }
-  .main .section-5 .btn {
-    height: 48px;
-    width: 300px;
-    margin-top: 2rem;
-    background: #00F3BB;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .main .section-5 .btn:hover {
-    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-    line-height: 24px;
-  }
-  .main .section-5 .btn:hover a {
-    color: #FFFFFF;
-  }
-  .main .section-5 .btn a {
-    color: #060A24;
-    text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-  }
 }
 
 @media screen and (min-width: 1025px) {
   .main .section-1 {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 40px 70px;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    padding: 70px 50px 150px 50px;
+    grid-gap: 2.5rem 4.375rem;
+    padding: 4.375rem 3.125rem 9.375rem 3.125rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -711,7 +660,7 @@
 
 .footer h3 {
   text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.9375rem;
   margin-bottom: 0.8rem;
 }
@@ -739,9 +688,13 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 2rem 4rem;
   }
   .footer .icons a {
     margin: 0 1.2rem;
+  }
+  .footer .icons a i:hover {
+    color: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   }
 }
 /*# sourceMappingURL=style.css.map */

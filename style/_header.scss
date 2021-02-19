@@ -45,7 +45,7 @@
                         position: relative;
                         text-decoration: none;
                         color: $text-color-2;
-                        font-family: 'IBM Plex Mono', monospace;
+                        font-family: $font-mono;
                         padding: 1.5rem 1rem 0 5%;
                         line-height: 1.75rem;
                         display: block;
@@ -62,14 +62,14 @@
             input {
                 display: block;
                 width: 40px;
-                height: 32px;
+                height: 2rem;
                 opacity: 0;
                 z-index: 2;
                 position: absolute;
                 right: 1rem;
                 /*animación del menu que se desplega*/
                 &[type="checkbox"]:checked ~ ul {
-                    height: 240px;
+                    height: 15rem;
                     z-index: -1;
                     transition: height 0.5s ease-in-out;
                     -moz-transition: height 0.5s ease-in-out;
